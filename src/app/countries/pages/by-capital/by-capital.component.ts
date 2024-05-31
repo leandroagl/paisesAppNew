@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-by-capital',
+  selector: 'countries-by-capital',
   templateUrl: './by-capital.component.html',
   styles: ``
 })
-export class ByCapitalComponent {
+export class ByCapitalPageComponent {
 
 }

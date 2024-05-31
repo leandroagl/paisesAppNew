@@ -1,21 +1,24 @@
 import { NgModule } from '@angular/core';
-import { ByCapitalComponent } from './components/by-capital/by-capital.component';
-import { ByCountryComponent } from './components/by-country/by-country.component';
-import { ByRegionComponent } from './components/by-region/by-region.component';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
+import { ByCapitalPageComponent } from './pages/by-capital/by-capital.component';
+import { ByCountryPageComponent } from './pages/by-country/by-country.component';
+import { ByRegionPageComponent } from './pages/by-region/by-region.component';
+import { CountryPageComponent } from './pages/country-page/country-page.component';
+import { CountriesRoutingModule } from './countries-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    CountriesRoutingModule
   ],
-  exports: [],
   declarations: [
-    ByCapitalComponent,
-    ByCountryComponent,
-    ByRegionComponent
+    ByCapitalPageComponent,
+    ByCountryPageComponent,
+    ByRegionPageComponent,
+    CountryPageComponent
   ],
-  providers: [],
+
 })
 export class CountriesModule { }
